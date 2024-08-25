@@ -1,6 +1,7 @@
 Flask
 gunicorn
 tensorflow
+keras
 transformers[tf-cpu]
 sentencepiece
 bs4

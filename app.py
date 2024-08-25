@@ -6,9 +6,6 @@ import urllib.request
 
 app = Flask(__name__)
 
-# Initialize the question-answering pipeline
-question_answer = pipeline("question-answering")
-
 
 def get_website_text(url):
     html = urllib.request.urlopen(url)
@@ -29,6 +26,7 @@ def index():
 
         if context and question:
             # Use the question-answering pipeline
+            question_answer = pipeline("question-answering")
             result = question_answer(question=question, context=context)
             answer = result['answer']
 

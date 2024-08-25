@@ -1,0 +1,7 @@
+Flask
+gunicorn
+tensorflow
+transformers[tf-cpu]
+sentencepiece
+bs4
+urllib3

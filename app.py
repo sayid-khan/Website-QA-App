@@ -1,3 +1,4 @@
+#pip install flask tensorflow transformers[tf-cpu] sentencepiece bs4 urllib3
 from flask import Flask, request, render_template
 from transformers import pipeline
 from bs4 import BeautifulSoup
@@ -35,4 +36,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(debug=True)
